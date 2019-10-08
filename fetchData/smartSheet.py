@@ -1,6 +1,13 @@
+import pandas as pd
 import smartsheet
+import datetime
+
 from credentials import credentials
 import globalVars
+
+
+def parseIntoDataFrame(excelFile):
+    df = pd.read_excel(excelFile)
 
 
 def downloadSmartsheet():
